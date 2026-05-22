@@ -48,20 +48,14 @@ revealElements.forEach((element) => {
   revealObserver.observe(element);
 });
 
-// Visitor Counter
-fetch("https://counterapi.dev/api/pooja-yogesh-athawale/visits/up")
-  .then((response) => response.json())
-  .then((data) => {
+// Visitor Counter starting from 201
+let visitorCount = localStorage.getItem("visitorCount");
 
-    // Actual visitor count from API
-    let realCount = data.count || data.value || 0;
+if (visitorCount === null) {
+  visitorCount = 201;
+} else {
+  visitorCount = Number(visitorCount) + 1;
+}
 
-    // Add 101 starting value
-    let displayCount = realCount + 201;
-
-    document.getElementById("visitorCount").innerText = displayCount;
-  })
-  .catch((error) => {
-    document.getElementById("visitorCount").innerText = "201";
-    console.log("Visitor counter error:", error);
-  });
+localStorage.setItem("visitorCount", visitorCount);
+document.getElementById("visitorCount").innerText = visitorCount;
