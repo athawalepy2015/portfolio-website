@@ -49,11 +49,12 @@ revealElements.forEach((element) => {
 });
 
 // Visitor Counter
-fetch("https://api.countapi.xyz/hit/pooja-yogesh-athawale-portfolio/visits")
+fetch("https://counterapi.dev/api/pooja-yogesh-athawale/visits/up")
   .then((response) => response.json())
   .then((data) => {
-    document.getElementById("visitorCount").innerText = data.value;
+    document.getElementById("visitorCount").innerText = data.count;
   })
   .catch((error) => {
+    document.getElementById("visitorCount").innerText = "0";
     console.log("Visitor counter error:", error);
   });
