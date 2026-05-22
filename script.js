@@ -47,3 +47,13 @@ const revealObserver = new IntersectionObserver(
 revealElements.forEach((element) => {
   revealObserver.observe(element);
 });
+
+// Visitor Counter
+fetch("https://api.countapi.xyz/hit/pooja-yogesh-athawale-portfolio/visits")
+  .then((response) => response.json())
+  .then((data) => {
+    document.getElementById("visitorCount").innerText = data.value;
+  })
+  .catch((error) => {
+    console.log("Visitor counter error:", error);
+  });
