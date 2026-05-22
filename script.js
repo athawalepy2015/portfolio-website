@@ -52,9 +52,11 @@ revealElements.forEach((element) => {
 fetch("https://counterapi.dev/api/pooja-yogesh-athawale/visits/up")
   .then((response) => response.json())
   .then((data) => {
-    document.getElementById("visitorCount").innerText = data.count;
+    console.log(data);
+    document.getElementById("visitorCount").innerText =
+      data.count || data.value || data.up_count || "1";
   })
   .catch((error) => {
-    document.getElementById("visitorCount").innerText = "0";
+    document.getElementById("visitorCount").innerText = "N/A";
     console.log("Visitor counter error:", error);
   });
