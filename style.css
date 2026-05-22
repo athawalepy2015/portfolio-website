@@ -562,4 +562,10 @@ footer {
   .hero {
     padding-top: 60px;
   }
+
+  .visitor-counter {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #888;
+}
 }
