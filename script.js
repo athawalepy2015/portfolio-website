@@ -1,61 +1,38 @@
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
+const themeToggle = document.getElementById("themeToggle");
 const topBtn = document.getElementById("topBtn");
+const year = document.getElementById("year");
 
-menuBtn.addEventListener("click", () => {
-  navLinks.classList.toggle("open");
-});
+if (year) year.textContent = new Date().getFullYear();
 
-document.querySelectorAll(".nav-links a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("open");
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("light");
+    themeToggle.textContent = document.body.classList.contains("light") ? "☀️" : "🌙";
   });
-});
-
-document.getElementById("year").textContent = new Date().getFullYear();
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 500) {
-    topBtn.classList.add("show");
-  } else {
-    topBtn.classList.remove("show");
-  }
-});
-
-topBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-});
-
-const revealElements = document.querySelectorAll(".reveal");
-
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("active");
-      }
-    });
-  },
-  {
-    threshold: 0.15,
-  }
-);
-
-revealElements.forEach((element) => {
-  revealObserver.observe(element);
-});
-
-// Visitor Counter starting from 201
-let visitorCount = localStorage.getItem("visitorCount");
-
-if (visitorCount === null) {
-  visitorCount = 201;
-} else {
-  visitorCount = Number(visitorCount) + 1;
 }
 
-localStorage.setItem("visitorCount", visitorCount);
-document.getElementById("visitorCount").innerText = visitorCount;
+if (menuBtn && navLinks) {
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+  });
+}
+
+window.addEventListener("scroll", () => {
+  document.querySelectorAll(".reveal").forEach((el) => {
+    if (el.getBoundingClientRect().top < window.innerHeight - 80) {
+      el.classList.add("active");
+    }
+  });
+
+  if (topBtn) {
+    topBtn.classList.toggle("show", window.scrollY > 400);
+  }
+});
+
+if (topBtn) {
+  topBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
