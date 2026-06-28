@@ -545,4 +545,80 @@ footer {
   .navbar {
     width: calc(100% - 20px);
   }
+
+  /* FINAL FIXES */
+
+body.light {
+  background: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+body.light .section,
+body.light .hero {
+  background: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+body.light .project-card,
+body.light .skill-card,
+body.light .about-cards div,
+body.light .education-card,
+body.light .research-item {
+  background: white !important;
+  color: #0f172a !important;
+}
+
+body.light p,
+body.light li {
+  color: #475569 !important;
+}
+
+.section {
+  padding: 55px 8% !important;
+}
+
+.hero {
+  min-height: auto !important;
+  padding: 120px 8% 50px !important;
+}
+
+.about-grid {
+  align-items: start !important;
+}
+
+.about-cards {
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 16px !important;
+}
+
+.about-cards div {
+  min-height: 78px !important;
+  padding: 20px 24px !important;
+}
+
+#about {
+  padding-bottom: 45px !important;
+}
+
+#skills {
+  padding-top: 45px !important;
+}
+
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .menu-btn {
+    display: block !important;
+  }
+
+  .nav-links {
+    display: none !important;
+  }
+
+  .nav-links.open {
+    display: flex !important;
+  }
+}
 }
