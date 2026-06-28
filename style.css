@@ -1,3 +1,22 @@
+.about-text,
+.timeline-card,
+.research-card,
+.contact-box,
+.education-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+}
+
+.section h2{
+    font-size:clamp(2.4rem,4vw,3.8rem);
+    line-height:1.15;
+    letter-spacing:-2px;
+    max-width:900px;
+    margin-bottom:30px;
+}
 /* ===========================
    ABOUT SECTION
 =========================== */
