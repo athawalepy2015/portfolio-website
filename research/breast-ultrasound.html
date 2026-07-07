@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Breast Ultrasound VAE Research | Pooja Yogesh Athawale</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">Pooja Yogesh Athawale</a>
+
+    <ul class="nav-links">
+      <li><a href="index.html#research">Home</a></li>
+      <li><a href="index.html#rag">Clinical RAG</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero research-hero">
+  <div class="hero-inner reveal">
+    <p class="eyebrow">Accepted Research • IntelliSys 2026 • Amsterdam</p>
+
+    <h1>
+      Deep Generative Modeling for Breast Ultrasound Representation Learning
+    </h1>
+
+    <p class="hero-copy">
+      A PyTorch-based Variational Autoencoder study analyzing how KL regularization
+      shapes latent space structure, reconstruction quality, and medical image
+      representation learning.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-kicker">Research Overview</div>
+
+  <div class="split-heading">
+    <h2>Effect of the Kullback–Leibler Prior on Latent Space Structure</h2>
+    <p>
+      This research investigates how Variational Autoencoders learn compact,
+      structured representations from breast ultrasound images and how those
+      representations support downstream analysis.
+    </p>
+  </div>
+
+  <div class="skills-panel reveal">
+    <div>
+      <h3>Problem</h3>
+      <p>
+        Breast ultrasound images contain high visual variability and subtle tissue
+        patterns, making representation learning important for medical AI systems.
+      </p>
+    </div>
+
+    <div>
+      <h3>Approach</h3>
+      <p>
+        A Variational Autoencoder was trained to reconstruct images while learning
+        a structured latent space controlled by KL regularization.
+      </p>
+    </div>
+
+    <div>
+      <h3>Evaluation</h3>
+      <p>
+        The latent space was analyzed using reconstruction quality, UMAP, t-SNE,
+        cluster metrics, centroid distances, and latent traversal.
+      </p>
+    </div>
+
+    <div>
+      <h3>Outcome</h3>
+      <p>
+        The work was accepted at IntelliSys 2026 in Amsterdam, Netherlands.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="section-kicker">Key Figure</div>
+
+  <div class="split-heading">
+    <h2>Latent Space Visualization</h2>
+    <p>
+      UMAP and t-SNE projections show how the VAE organizes breast ultrasound
+      representations in the learned latent space.
+    </p>
+  </div>
+
+  <div class="showcase-image reveal">
+    <img src="assets/breast/umap_tsne_combined.png" alt="UMAP and t-SNE latent space visualization">
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-kicker">Results Gallery</div>
+
+  <div class="card-grid">
+
+    <article class="publication-card reveal">
+      <img src="assets/breast/final_training_curves.png" alt="VAE training curves">
+      <h3>Training Curves</h3>
+      <p>Training loss, reconstruction behavior, KL divergence, and beta warmup during VAE optimization.</p>
+    </article>
+
+    <article class="publication-card reveal">
+      <img src="assets/breast/final_reconstruction_grid.png" alt="VAE reconstruction grid">
+      <h3>Image Reconstruction</h3>
+      <p>Original and reconstructed breast ultrasound images showing learned representation quality.</p>
+    </article>
+
+    <article class="publication-card reveal">
+      <img src="assets/breast/cluster_metrics_bar.png" alt="Cluster metrics">
+      <h3>Cluster Metrics</h3>
+      <p>Quantitative evaluation of latent space separability and clustering structure.</p>
+    </article>
+
+    <article class="publication-card reveal">
+      <img src="assets/breast/centroid_distances.png" alt="Centroid distances">
+      <h3>Centroid Distances</h3>
+      <p>Class-level latent distance analysis to understand separation between learned representations.</p>
+    </article>
+
+    <article class="publication-card reveal">
+      <img src="assets/breast/traversal_combined.png" alt="Latent traversal">
+      <h3>Latent Traversal</h3>
+      <p>Latent dimension traversal showing how changes in latent variables affect reconstructed outputs.</p>
+    </article>
+
+    <article class="publication-card reveal">
+      <img src="assets/breast/anchor_images.png" alt="Anchor images">
+      <h3>Anchor Images</h3>
+      <p>Representative samples used to interpret latent structure and reconstruction behavior.</p>
+    </article>
+
+  </div>
+</section>
+
+<section class="section contact">
+  <div class="contact-box reveal">
+    <p class="section-kicker">Research Status</p>
+    <h2>Accepted at IntelliSys 2026</h2>
+    <p>
+      Accepted for presentation at the Intelligent Systems Conference 2026,
+      Amsterdam, Netherlands.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Pooja Yogesh Athawale</p>
+</footer>
+
+<button id="topBtn" class="top-btn">↑</button>
+<script src="script.js"></script>
+
+</body>
+</html>
