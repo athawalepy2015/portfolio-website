@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Clinical RAG Reliability | Pooja Yogesh Athawale</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">Pooja Yogesh Athawale</a>
+
+    <ul class="nav-links">
+      <li><a href="index.html#research">Research</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#publications">Publications</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero research-hero">
+  <div class="hero-inner reveal">
+    <p class="eyebrow">Clinical AI • LLM Reliability • RAG Evaluation</p>
+
+    <h1>
+      Reliable Clinical Decision Support using Retrieval-Augmented Generation
+    </h1>
+
+    <p class="hero-copy">
+      A research framework evaluating confidence calibration, evidence utilization,
+      JSON reliability, and failure patterns in clinical question answering systems.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-kicker">Project Overview</div>
+
+  <div class="split-heading">
+    <h2>Evaluating reliability beyond accuracy.</h2>
+    <p>
+      This project studies whether clinical RAG systems are not only correct,
+      but also reliable, calibrated, evidence-aware, and interpretable across
+      multiple medical QA benchmarks.
+    </p>
+  </div>
+
+  <div class="skills-panel reveal">
+    <div>
+      <h3>Datasets</h3>
+      <p>PubMedQA, MedQA, and MMLU-Med were used for cross-dataset clinical QA evaluation.</p>
+    </div>
+
+    <div>
+      <h3>Pipeline</h3>
+      <p>A fixed retrieval pipeline was used so the analysis could focus on generation-side reliability.</p>
+    </div>
+
+    <div>
+      <h3>Models</h3>
+      <p>Qwen and Mistral were evaluated for clinical answer generation and reliability behavior.</p>
+    </div>
+
+    <div>
+      <h3>Analysis</h3>
+      <p>Confidence calibration, evidence use, invalid JSON, and failure taxonomy were analyzed.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="section-kicker">System Workflow</div>
+
+  <div class="rag-showcase reveal">
+    <div class="rag-flow">
+      <div>Clinical Question</div>
+      <span>↓</span>
+      <div>Fixed Retrieval</div>
+      <span>↓</span>
+      <div>LLM Generation</div>
+      <span>↓</span>
+      <div>Reliability Metrics</div>
+      <span>↓</span>
+      <div>Failure Analysis</div>
+    </div>
+
+    <div>
+      <h3>Why this matters</h3>
+      <p>
+        In clinical AI, accuracy alone is not enough. A model can produce a correct-looking
+        answer while being overconfident, poorly calibrated, unsupported by evidence,
+        or inconsistent across datasets.
+      </p>
+
+      <div class="mini-list">
+        <span>13,872 Questions</span>
+        <span>Confidence Calibration</span>
+        <span>Evidence Utilization</span>
+        <span>Failure Taxonomy</span>
+        <span>Cross-Dataset Analysis</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-kicker">Research Contributions</div>
+
+  <div class="card-grid">
+    <article class="publication-card reveal">
+      <h3>Confidence Calibration</h3>
+      <p>
+        Analyzed whether the model's confidence aligns with correctness across
+        PubMedQA, MedQA, and MMLU-Med.
+      </p>
+    </article>
+
+    <article class="publication-card reveal">
+      <h3>Evidence Utilization</h3>
+      <p>
+        Studied how retrieved evidence is used or ignored during answer generation.
+      </p>
+    </article>
+
+    <article class="publication-card reveal">
+      <h3>Failure Taxonomy</h3>
+      <p>
+        Categorized errors into interpretable failure patterns for clinical QA reliability.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section class="section contact">
+  <div class="contact-box reveal">
+    <p class="section-kicker">Current Research</p>
+    <h2>Clinical RAG Reliability</h2>
+    <p>
+      Paper and detailed results are being prepared.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Pooja Yogesh Athawale</p>
+</footer>
+
+<button id="topBtn" class="top-btn">↑</button>
+<script src="script.js"></script>
+
+</body>
+</html>
