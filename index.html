@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Pooja Yogesh Athawale | AI Research & Engineering Portfolio</title>
+  <title>Pooja Yogesh Athawale | AI Research Portfolio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,315 +15,291 @@
 
 <body>
 
-<header>
-  <nav class="navbar">
-    <a href="#home" class="logo">Pooja Yogesh Athawale</a>
+<header class="site-header">
+  <nav class="nav">
+    <a href="#home" class="brand">Pooja Yogesh Athawale</a>
 
     <button class="menu-btn" id="menuBtn">☰</button>
 
     <ul class="nav-links" id="navLinks">
       <li><a href="#research">Research</a></li>
       <li><a href="#rag">Clinical RAG</a></li>
-      <li><a href="#projects">AI Projects</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact" class="nav-btn">Contact</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
     </ul>
   </nav>
 </header>
 
 <main>
 
-  <section id="home" class="hero">
-    <div class="hero-content reveal">
-      <p class="section-label">AI Research • Machine Learning • Generative AI</p>
+<section id="home" class="hero">
+  <div class="hero-inner reveal">
+    <p class="eyebrow">AI Engineer • Generative AI • Healthcare AI</p>
 
-      <h1>Building trustworthy AI systems for healthcare and real-world decision making.</h1>
+    <h1>
+      Building trustworthy AI systems through research,
+      machine learning, and large language models.
+    </h1>
 
-      <p class="hero-text">
-        I am Pooja Yogesh Athawale, a Graduate Research Assistant and M.S. Computer & Information Science student at Southern Arkansas University. My work focuses on Healthcare AI, Generative AI, Medical Imaging, Retrieval-Augmented Generation, and reliable machine learning systems.
-      </p>
+    <p class="hero-copy">
+      AI Engineer specializing in Healthcare AI, Medical Imaging,
+      Retrieval-Augmented Generation, LLM reliability, and production-ready
+      machine learning systems.
+    </p>
 
-      <div class="hero-buttons">
-        <a href="#research" class="btn primary">View Research</a>
-        <a href="#projects" class="btn secondary">View Projects</a>
-        <a href="assets/PoojaResume2026.pdf" target="_blank" class="btn outline">Download Resume</a>
-      </div>
+    <div class="hero-actions">
+      <a href="#research" class="btn primary">Explore Research</a>
+      <a href="#rag" class="btn secondary">Clinical RAG</a>
+      <a href="assets/PoojaResume2026.pdf" target="_blank" class="btn ghost">Resume</a>
+    </div>
+  </div>
+
+  <div class="impact-strip reveal">
+    <div>
+      <strong>1</strong>
+      <span>International Research Publication</span>
+    </div>
+    <div>
+      <strong>780+</strong>
+      <span>Medical Images Analyzed</span>
+    </div>
+    <div>
+      <strong>13,872</strong>
+      <span>Clinical QA Evaluations</span>
+    </div>
+    <div>
+      <strong>5+</strong>
+      <span>AI Research & Engineering Projects</span>
+    </div>
+  </div>
+</section>
+
+<section id="research" class="section">
+  <div class="section-kicker">Featured Research</div>
+
+  <div class="split-heading">
+    <h2>Deep Generative Modeling for Breast Ultrasound Representation Learning</h2>
+    <p>
+      Accepted at IntelliSys 2026, Amsterdam, Netherlands. This work studies how
+      Variational Autoencoders learn clinically meaningful latent structures from
+      breast ultrasound images.
+    </p>
+  </div>
+
+  <div class="research-showcase reveal">
+    <div class="showcase-image">
+      <img src="assets/breast/umap_tsne_combined.png" alt="UMAP and t-SNE visualization of breast ultrasound latent space">
     </div>
 
-    <div class="hero-panel reveal">
-      <p>Graduate Research Assistant</p>
-      <h3>Healthcare AI • LLM Reliability • Medical Imaging</h3>
-
-      <div class="impact-grid">
-        <div>
-          <strong>1</strong>
-          <span>International Conference Paper</span>
-        </div>
-        <div>
-          <strong>13,872</strong>
-          <span>Clinical QA Samples Evaluated</span>
-        </div>
-        <div>
-          <strong>780+</strong>
-          <span>Medical Images Analyzed</span>
-        </div>
-        <div>
-          <strong>5+</strong>
-          <span>AI/ML Research Projects</span>
-        </div>
+    <div class="showcase-content">
+      <div class="badges">
+        <span>Accepted Paper</span>
+        <span>IntelliSys 2026</span>
+        <span>Amsterdam, Netherlands</span>
       </div>
-    </div>
-  </section>
 
-  <section id="research" class="section">
-    <p class="section-label">Featured Research</p>
+      <h3>
+        Effect of the Kullback–Leibler Prior on Latent Space Structure
+        in Breast Ultrasound Representation Learning
+      </h3>
 
-    <div class="section-header">
-      <h2>Deep Generative Modeling for Breast Ultrasound Representation Learning</h2>
       <p>
-        Accepted at IntelliSys 2026, Amsterdam, Netherlands.
+        Developed a PyTorch-based Variational Autoencoder to analyze how KL
+        regularization affects reconstruction quality, latent separability,
+        clustering behavior, and diagnostic representation learning in medical imaging.
       </p>
-    </div>
 
-    <div class="featured-card reveal">
-      <div class="featured-image">
-        <img src="assets/breast/umap_tsne_combined.png" alt="UMAP and t-SNE latent space visualization">
+      <div class="mini-list">
+        <span>PyTorch VAE</span>
+        <span>UMAP + t-SNE</span>
+        <span>Latent Space Evaluation</span>
+        <span>Medical Imaging</span>
       </div>
 
-      <div class="featured-content">
-        <div class="badge-row">
-          <span>📄 Accepted Paper</span>
-          <span>🇳🇱 IntelliSys 2026</span>
-          <span>Medical Imaging</span>
-        </div>
-
-        <h3>Effect of the Kullback–Leibler Prior on Latent Space Structure in Breast Ultrasound Representation Learning</h3>
-
-        <p>
-          Developed a Variational Autoencoder framework to investigate how KL regularization shapes latent space organization in breast ultrasound images. The study evaluates reconstruction quality, latent separability, clustering behavior, and downstream diagnostic utility for medical imaging.
-        </p>
-
-        <ul class="check-list">
-          <li>780+ breast ultrasound images analyzed</li>
-          <li>PyTorch-based Variational Autoencoder</li>
-          <li>Latent space analysis using UMAP and t-SNE</li>
-          <li>Cluster metrics, centroid distances, and latent traversal evaluation</li>
-        </ul>
-
-        <div class="hero-buttons">
-          <a href="#" class="btn primary">Research Page Coming Soon</a>
-          <a href="#publications" class="btn secondary">View Publication</a>
-        </div>
-      </div>
+      <a href="#" class="text-link">Research page coming soon →</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="rag" class="section soft-section">
-    <p class="section-label">Featured AI Project</p>
+<section id="rag" class="section soft">
+  <div class="section-kicker">Featured AI Project</div>
 
-    <div class="section-header">
-      <h2>Clinical RAG Reliability</h2>
+  <div class="split-heading">
+    <h2>Clinical RAG Reliability</h2>
+    <p>
+      A research framework for evaluating reliability, confidence calibration,
+      evidence usage, and failure patterns in clinical Retrieval-Augmented Generation.
+    </p>
+  </div>
+
+  <div class="rag-showcase reveal">
+    <div class="rag-flow">
+      <div>Medical Question</div>
+      <span>↓</span>
+      <div>Fixed Retrieval Pipeline</div>
+      <span>↓</span>
+      <div>Qwen / Mistral Generation</div>
+      <span>↓</span>
+      <div>Reliability Analysis</div>
+    </div>
+
+    <div>
+      <h3>Reliable Clinical Decision Support using Retrieval-Augmented Generation</h3>
       <p>
-        A research framework for evaluating reliability, calibration, evidence use, and failure patterns in clinical Retrieval-Augmented Generation systems.
+        Built a modular research pipeline across PubMedQA, MedQA, and MMLU-Med to
+        analyze generation-side reliability in clinical AI systems. The evaluation
+        includes confidence calibration, evidence utilization, invalid JSON detection,
+        failure taxonomy, and cross-dataset behavior.
       </p>
-    </div>
 
-    <div class="rag-card reveal">
-      <div class="rag-diagram">
-        <div>Medical Question</div>
-        <span>↓</span>
-        <div>Retrieval Pipeline</div>
-        <span>↓</span>
-        <div>Qwen / Mistral Generation</div>
-        <span>↓</span>
-        <div>Reliability Analysis</div>
+      <div class="mini-list">
+        <span>13,872 Questions</span>
+        <span>Qwen</span>
+        <span>Mistral</span>
+        <span>RAG</span>
+        <span>Confidence Calibration</span>
+        <span>Failure Taxonomy</span>
       </div>
 
-      <div class="rag-content">
-        <h3>Reliable Clinical Decision Support using Retrieval-Augmented Generation</h3>
-
-        <p>
-          Built a modular evaluation pipeline across PubMedQA, MedQA, and MMLU-Med to study generation-side reliability in clinical AI. The system analyzes confidence calibration, evidence utilization, JSON validity, failure taxonomy, and cross-dataset behavior.
-        </p>
-
-        <div class="metric-row">
-          <span>13,872 Questions</span>
-          <span>Qwen</span>
-          <span>Mistral</span>
-          <span>RAG</span>
-          <span>Failure Taxonomy</span>
-          <span>Confidence Calibration</span>
-        </div>
-
-        <a href="#" class="text-link">Clinical RAG page coming soon →</a>
-      </div>
+      <a href="#" class="text-link">Clinical RAG page coming soon →</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="projects" class="section">
-    <p class="section-label">AI Projects</p>
+<section id="projects" class="section">
+  <div class="section-kicker">AI Projects</div>
 
-    <div class="section-header">
-      <h2>Selected machine learning, analytics, and data engineering projects.</h2>
-    </div>
+  <div class="split-heading">
+    <h2>Selected applied AI, analytics, and data engineering work.</h2>
+  </div>
 
-    <div class="projects-grid">
-      <article class="project-card reveal">
-        <span class="project-icon">🏦</span>
-        <h3>BankAI Customer Decision Prediction</h3>
-        <p>
-          Built and evaluated machine learning models for customer decision prediction using classification metrics including accuracy, precision, recall, F1-score, and ROC-AUC.
-        </p>
-        <div class="tags">
-          <span>Python</span>
-          <span>Scikit-learn</span>
-          <span>SQL</span>
-          <span>EDA</span>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <span class="project-icon">🌌</span>
-        <h3>AuroraPredict AI</h3>
-        <p>
-          Developed a predictive modeling pipeline using light-pollution and solar activity data to analyze trends and support aurora visibility prediction.
-        </p>
-        <div class="tags">
-          <span>Python</span>
-          <span>Feature Engineering</span>
-          <span>Data Mining</span>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <span class="project-icon">⚙️</span>
-        <h3>Databricks ETL Pipeline</h3>
-        <p>
-          Designed reusable ETL workflows in PySpark on Databricks for ingestion, transformation, validation, and analytics-ready data processing.
-        </p>
-        <div class="tags">
-          <span>Databricks</span>
-          <span>PySpark</span>
-          <span>ETL</span>
-          <span>Validation</span>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section id="publications" class="section soft-section">
-    <p class="section-label">Publications & Recognition</p>
-
-    <div class="section-header">
-      <h2>Research publications, presentations, and academic recognition.</h2>
-    </div>
-
-    <div class="publication-grid">
-      <article class="publication-card reveal">
-        <p class="pub-type">Accepted Paper</p>
-        <h3>IntelliSys 2026</h3>
-        <p>
-          Accepted at the Intelligent Systems Conference 2026 in Amsterdam, Netherlands, for research on deep generative modeling in breast ultrasound representation learning.
-        </p>
-      </article>
-
-      <article class="publication-card reveal">
-        <p class="pub-type">Conference Presentation</p>
-        <h3>Arkansas Academy of Science 2026</h3>
-        <p>
-          Received 3rd Place for presenting research on Variational Autoencoder-based breast tumor analysis.
-        </p>
-      </article>
-
-      <article class="publication-card reveal">
-        <p class="pub-type">Research Poster</p>
-        <h3>DART Poster Competition</h3>
-        <p>
-          Presented tumor representation and reconstruction results in Little Rock, Arkansas.
-        </p>
-      </article>
-    </div>
-  </section>
-
-  <section id="skills" class="section">
-    <p class="section-label">Technical Expertise</p>
-
-    <div class="section-header">
-      <h2>Tools and technologies I use to build AI systems.</h2>
-    </div>
-
-    <div class="skills-wrapper reveal">
-      <div>
-        <h3>AI & Machine Learning</h3>
-        <div class="skill-tags">
-          <span>Python</span>
-          <span>PyTorch</span>
-          <span>Scikit-learn</span>
-          <span>Transformers</span>
-          <span>Computer Vision</span>
-          <span>NLP</span>
-          <span>Model Evaluation</span>
-        </div>
-      </div>
-
-      <div>
-        <h3>Generative AI</h3>
-        <div class="skill-tags">
-          <span>LLMs</span>
-          <span>RAG</span>
-          <span>ChromaDB</span>
-          <span>Hugging Face</span>
-          <span>Prompt Engineering</span>
-          <span>LangGraph</span>
-          <span>Gemini API</span>
-        </div>
-      </div>
-
-      <div>
-        <h3>Data & Cloud</h3>
-        <div class="skill-tags">
-          <span>SQL</span>
-          <span>PostgreSQL</span>
-          <span>PySpark</span>
-          <span>Databricks</span>
-          <span>AWS</span>
-          <span>GCP</span>
-          <span>ETL Pipelines</span>
-        </div>
-      </div>
-
-      <div>
-        <h3>Analytics</h3>
-        <div class="skill-tags">
-          <span>Power BI</span>
-          <span>Tableau</span>
-          <span>Excel</span>
-          <span>EDA</span>
-          <span>Matplotlib</span>
-          <span>Seaborn</span>
-          <span>Statistical Analysis</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section contact-section">
-    <div class="contact-card reveal">
-      <p class="section-label">Contact</p>
-      <h2>Let’s build trustworthy AI systems.</h2>
+  <div class="card-grid">
+    <article class="project-card reveal">
+      <p class="icon">🏦</p>
+      <h3>BankAI Customer Decision Prediction</h3>
       <p>
-        Open to AI Engineer, Machine Learning Engineer, Generative AI Engineer, Data Scientist, and Healthcare AI roles.
+        Built an end-to-end ML pipeline for customer decision prediction using
+        classification models and evaluation metrics including precision, recall,
+        F1-score, and ROC-AUC.
       </p>
-
-      <div class="contact-links">
-        <a href="mailto:athawale.pooja2015@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/pooja-athawale-2a9a47231/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/athawalepy2015" target="_blank">GitHub</a>
-        <a href="assets/PoojaResume2026.pdf" target="_blank">Resume</a>
+      <div class="tags">
+        <span>Python</span><span>Scikit-learn</span><span>SQL</span><span>EDA</span>
       </div>
+    </article>
+
+    <article class="project-card reveal">
+      <p class="icon">🌌</p>
+      <h3>AuroraPredict AI</h3>
+      <p>
+        Developed a predictive modeling workflow using light-pollution and solar
+        activity data to study aurora visibility patterns and long-term trends.
+      </p>
+      <div class="tags">
+        <span>Python</span><span>Feature Engineering</span><span>Data Mining</span>
+      </div>
+    </article>
+
+    <article class="project-card reveal">
+      <p class="icon">⚙️</p>
+      <h3>Databricks ETL Pipeline</h3>
+      <p>
+        Designed reusable PySpark ETL workflows on Databricks for ingestion,
+        transformation, validation, and analytics-ready data processing.
+      </p>
+      <div class="tags">
+        <span>Databricks</span><span>PySpark</span><span>ETL</span><span>Validation</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="publications" class="section soft">
+  <div class="section-kicker">Research & Publications</div>
+
+  <div class="split-heading">
+    <h2>Publications, presentations, and academic recognition.</h2>
+  </div>
+
+  <div class="card-grid">
+    <article class="publication-card reveal">
+      <p class="pub-label">Accepted Paper</p>
+      <h3>IntelliSys 2026</h3>
+      <p>
+        Accepted at the Intelligent Systems Conference 2026 in Amsterdam,
+        Netherlands, for research on deep generative modeling in breast
+        ultrasound representation learning.
+      </p>
+    </article>
+
+    <article class="publication-card reveal">
+      <p class="pub-label">Conference Presentation</p>
+      <h3>Arkansas Academy of Science 2026</h3>
+      <p>
+        Received 3rd Place for presenting research on Variational
+        Autoencoder-based breast tumor analysis.
+      </p>
+    </article>
+
+    <article class="publication-card reveal">
+      <p class="pub-label">Research Poster</p>
+      <h3>DART Poster Competition</h3>
+      <p>
+        Presented tumor representation and reconstruction results in
+        Little Rock, Arkansas.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <div class="section-kicker">Technical Expertise</div>
+
+  <div class="split-heading">
+    <h2>Tools and technologies used across AI research and engineering.</h2>
+  </div>
+
+  <div class="skills-panel reveal">
+    <div>
+      <h3>AI & ML</h3>
+      <p>Python • PyTorch • Scikit-learn • Transformers • Computer Vision • NLP • Model Evaluation</p>
     </div>
-  </section>
+
+    <div>
+      <h3>Generative AI</h3>
+      <p>LLMs • RAG • ChromaDB • Hugging Face • Prompt Engineering • LangGraph • Gemini API</p>
+    </div>
+
+    <div>
+      <h3>Data & Cloud</h3>
+      <p>SQL • PostgreSQL • PySpark • Databricks • AWS • GCP • ETL Pipelines</p>
+    </div>
+
+    <div>
+      <h3>Analytics</h3>
+      <p>Power BI • Tableau • Excel • EDA • Matplotlib • Seaborn • Statistical Analysis</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="contact-box reveal">
+    <p class="section-kicker">Contact</p>
+    <h2>Let’s build trustworthy AI systems.</h2>
+    <p>
+      Open to AI Engineer, Machine Learning Engineer, Generative AI Engineer,
+      Data Scientist, and Healthcare AI roles.
+    </p>
+
+    <div class="contact-links">
+      <a href="mailto:athawale.pooja2015@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/pooja-athawale-2a9a47231/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/athawalepy2015" target="_blank">GitHub</a>
+      <a href="assets/PoojaResume2026.pdf" target="_blank">Resume</a>
+    </div>
+  </div>
+</section>
 
 </main>
 
