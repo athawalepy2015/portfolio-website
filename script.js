@@ -20,9 +20,15 @@ if (menuBtn && navLinks) {
 }
 
 function revealOnScroll() {
-  document.querySelectorAll(".reveal").forEach((el) => {
-    if (el.getBoundingClientRect().top < window.innerHeight - 80) {
-      el.classList.add("active");
+  const reveals = document.querySelectorAll(".reveal");
+
+  reveals.forEach((element) => {
+    const windowHeight = window.innerHeight;
+    const elementTop = element.getBoundingClientRect().top;
+    const revealPoint = 90;
+
+    if (elementTop < windowHeight - revealPoint) {
+      element.classList.add("active");
     }
   });
 }
@@ -31,14 +37,17 @@ window.addEventListener("scroll", () => {
   revealOnScroll();
 
   if (topBtn) {
-    topBtn.classList.toggle("show", window.scrollY > 400);
+    topBtn.classList.toggle("show", window.scrollY > 450);
   }
 });
 
-revealOnScroll();
+window.addEventListener("load", revealOnScroll);
 
 if (topBtn) {
   topBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   });
 }
