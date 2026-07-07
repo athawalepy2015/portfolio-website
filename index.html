@@ -17,126 +17,95 @@
 
 <header class="site-header">
   <nav class="nav">
-    <a href="#home" class="brand">Pooja Yogesh Athawale</a>
+    <a href="index.html" class="brand">Pooja Yogesh Athawale</a>
 
     <button class="menu-btn" id="menuBtn">☰</button>
 
     <ul class="nav-links" id="navLinks">
       <li><a href="#research">Research</a></li>
-      <li><a href="#rag">Clinical RAG</a></li>
+      <li><a href="#clinical-rag">Clinical RAG</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#publications">Publications</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact" class="nav-cta">Contact</a></li>
+      <li><a href="#contact" class="nav-pill">Contact</a></li>
     </ul>
   </nav>
 </header>
 
 <main>
 
-<section id="home" class="hero">
-  <div class="hero-inner reveal">
-    <p class="eyebrow">AI Engineer • Generative AI • Healthcare AI</p>
+  <section class="hero">
+    <p class="eyebrow reveal">AI Engineer • Machine Learning • Generative AI</p>
 
-    <h1>
-      Building trustworthy AI systems through research,
-      machine learning, and large language models.
+    <h1 class="reveal">
+      Building trustworthy AI systems for healthcare and enterprise decision-making.
     </h1>
 
-    <p class="hero-copy">
-      AI Engineer specializing in Healthcare AI, Medical Imaging,
-      Retrieval-Augmented Generation, LLM reliability, and production-ready
-      machine learning systems.
+    <p class="hero-copy reveal">
+      Specializing in Healthcare AI, Medical Imaging, Retrieval-Augmented Generation,
+      LLM reliability, and production-ready machine learning systems.
     </p>
 
-    <div class="hero-actions">
+    <div class="hero-actions reveal">
       <a href="#research" class="btn primary">Explore Research</a>
-      <a href="#rag" class="btn secondary">Clinical RAG</a>
+      <a href="#clinical-rag" class="btn secondary">View Clinical RAG</a>
       <a href="assets/PoojaResume2026.pdf" target="_blank" class="btn ghost">Resume</a>
     </div>
-  </div>
+  </section>
 
-  <div class="impact-strip reveal">
-    <div>
-      <strong>1</strong>
-      <span>International Research Publication</span>
-    </div>
-    <div>
-      <strong>780+</strong>
-      <span>Medical Images Analyzed</span>
-    </div>
-    <div>
-      <strong>13,872</strong>
-      <span>Clinical QA Evaluations</span>
-    </div>
-    <div>
-      <strong>5+</strong>
-      <span>AI Research & Engineering Projects</span>
-    </div>
-  </div>
-</section>
-
-<section id="research" class="section">
-  <div class="section-kicker">Featured Research</div>
-
-  <div class="split-heading">
-    <h2>Deep Generative Modeling for Breast Ultrasound Representation Learning</h2>
-    <p>
-      Accepted at IntelliSys 2026, Amsterdam, Netherlands. This work studies how
-      Variational Autoencoders learn clinically meaningful latent structures from
-      breast ultrasound images.
-    </p>
-  </div>
-
-  <div class="research-showcase reveal">
-    <div class="showcase-image">
-      <img src="assets/breast/umap_tsne_combined.png" alt="UMAP and t-SNE visualization of breast ultrasound latent space">
+  <section class="impact">
+    <div class="impact-item reveal">
+      <span>01</span>
+      <h3>International Research Publication</h3>
+      <p>Accepted at IntelliSys 2026, Amsterdam, Netherlands.</p>
     </div>
 
-    <div class="showcase-content">
-      <div class="badges">
-        <span>Accepted Paper</span>
-        <span>IntelliSys 2026</span>
-        <span>Amsterdam, Netherlands</span>
+    <div class="impact-item reveal">
+      <span>780+</span>
+      <h3>Medical Images Analyzed</h3>
+      <p>Breast ultrasound representation learning using deep generative models.</p>
+    </div>
+
+    <div class="impact-item reveal">
+      <span>13,872</span>
+      <h3>Clinical QA Evaluations</h3>
+      <p>Reliability analysis across PubMedQA, MedQA, and MMLU-Med.</p>
+    </div>
+  </section>
+
+  <section id="research" class="feature-section">
+    <div class="section-title reveal">
+      <p class="eyebrow">Featured Research</p>
+      <h2>Deep Generative Modeling for Breast Ultrasound Representation Learning</h2>
+    </div>
+
+    <div class="large-visual reveal">
+      <img src="assets/breast/umap_tsne_combined.png" alt="UMAP and t-SNE latent space visualization">
+    </div>
+
+    <div class="feature-copy reveal">
+      <div>
+        <p class="label">Accepted Paper</p>
+        <h3>IntelliSys 2026 • Amsterdam, Netherlands</h3>
       </div>
-
-      <h3>
-        Effect of the Kullback–Leibler Prior on Latent Space Structure
-        in Breast Ultrasound Representation Learning
-      </h3>
 
       <p>
-        Developed a PyTorch-based Variational Autoencoder to analyze how KL
-        regularization affects reconstruction quality, latent separability,
-        clustering behavior, and diagnostic representation learning in medical imaging.
+        Developed a PyTorch-based Variational Autoencoder to study how KL regularization
+        shapes latent space structure, reconstruction quality, clustering behavior,
+        and medical image representation learning in breast ultrasound data.
       </p>
 
-      <div class="mini-list">
-        <span>PyTorch VAE</span>
-        <span>UMAP + t-SNE</span>
-        <span>Latent Space Evaluation</span>
-        <span>Medical Imaging</span>
-      </div>
-
-      <a href="research.html" class="text-link">Read full research →</a>
+      <a href="research.html" class="arrow-link">Read full research →</a>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="rag" class="section soft">
-  <div class="section-kicker">Featured AI Project</div>
+  <section id="clinical-rag" class="feature-section soft">
+    <div class="section-title reveal">
+      <p class="eyebrow">Current Research</p>
+      <h2>Clinical RAG Reliability</h2>
+    </div>
 
-  <div class="split-heading">
-    <h2>Clinical RAG Reliability</h2>
-    <p>
-      A research framework for evaluating reliability, confidence calibration,
-      evidence usage, and failure patterns in clinical Retrieval-Augmented Generation.
-    </p>
-  </div>
-
-  <div class="rag-showcase reveal">
-    <div class="rag-flow">
-      <div>Medical Question</div>
+    <div class="rag-visual reveal">
+      <div>Clinical Question</div>
       <span>↓</span>
       <div>Fixed Retrieval Pipeline</div>
       <span>↓</span>
@@ -145,161 +114,110 @@
       <div>Reliability Analysis</div>
     </div>
 
-    <div>
-      <h3>Reliable Clinical Decision Support using Retrieval-Augmented Generation</h3>
-      <p>
-        Built a modular research pipeline across PubMedQA, MedQA, and MMLU-Med to
-        analyze generation-side reliability in clinical AI systems. The evaluation
-        includes confidence calibration, evidence utilization, invalid JSON detection,
-        failure taxonomy, and cross-dataset behavior.
-      </p>
-
-      <div class="mini-list">
-        <span>13,872 Questions</span>
-        <span>Qwen</span>
-        <span>Mistral</span>
-        <span>RAG</span>
-        <span>Confidence Calibration</span>
-        <span>Failure Taxonomy</span>
+    <div class="feature-copy reveal">
+      <div>
+        <p class="label">Reliable Clinical AI</p>
+        <h3>Evaluating generation-side reliability beyond accuracy.</h3>
       </div>
 
-      <a href="clinical-rag.html" class="text-link">Explore Clinical RAG →</a>
-    </div>
-  </div>
-</section>
-
-<section id="projects" class="section">
-  <div class="section-kicker">AI Projects</div>
-
-  <div class="split-heading">
-    <h2>Selected applied AI, analytics, and data engineering work.</h2>
-  </div>
-
-  <div class="card-grid">
-    <article class="project-card reveal">
-      <p class="icon">🏦</p>
-      <h3>BankAI Customer Decision Prediction</h3>
       <p>
-        Built an end-to-end ML pipeline for customer decision prediction using
-        classification models and evaluation metrics including precision, recall,
-        F1-score, and ROC-AUC.
+        Built a modular clinical RAG evaluation pipeline to analyze confidence calibration,
+        evidence utilization, invalid JSON behavior, failure taxonomy, and cross-dataset
+        reliability across 13,872 medical QA samples.
       </p>
-      <div class="tags">
-        <span>Python</span><span>Scikit-learn</span><span>SQL</span><span>EDA</span>
+
+      <a href="clinical-rag.html" class="arrow-link">Explore Clinical RAG →</a>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <div class="section-title reveal">
+      <p class="eyebrow">Selected AI Projects</p>
+      <h2>Applied machine learning, analytics, and data engineering work.</h2>
+    </div>
+
+    <div class="project-list">
+      <a href="projects.html" class="project-row reveal">
+        <span>01</span>
+        <div>
+          <h3>BankAI Customer Decision Prediction</h3>
+          <p>End-to-end ML pipeline for customer decision prediction and classification evaluation.</p>
+        </div>
+        <strong>→</strong>
+      </a>
+
+      <a href="projects.html" class="project-row reveal">
+        <span>02</span>
+        <div>
+          <h3>AuroraPredict AI</h3>
+          <p>Predictive modeling workflow using solar activity and light-pollution data.</p>
+        </div>
+        <strong>→</strong>
+      </a>
+
+      <a href="projects.html" class="project-row reveal">
+        <span>03</span>
+        <div>
+          <h3>Databricks ETL Pipeline</h3>
+          <p>Reusable PySpark ETL workflows for ingestion, transformation, and validation.</p>
+        </div>
+        <strong>→</strong>
+      </a>
+    </div>
+  </section>
+
+  <section id="publications" class="publications-section soft">
+    <div class="section-title reveal">
+      <p class="eyebrow">Research & Publications</p>
+      <h2>Publications, presentations, and academic recognition.</h2>
+    </div>
+
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <span>2026</span>
+        <div>
+          <h3>IntelliSys 2026</h3>
+          <p>Accepted paper on deep generative modeling for breast ultrasound representation learning.</p>
+        </div>
       </div>
-    </article>
 
-    <article class="project-card reveal">
-      <p class="icon">🌌</p>
-      <h3>AuroraPredict AI</h3>
-      <p>
-        Developed a predictive modeling workflow using light-pollution and solar
-        activity data to study aurora visibility patterns and long-term trends.
-      </p>
-      <div class="tags">
-        <span>Python</span><span>Feature Engineering</span><span>Data Mining</span>
+      <div class="timeline-item">
+        <span>2026</span>
+        <div>
+          <h3>Arkansas Academy of Science</h3>
+          <p>3rd Place conference presentation for VAE-based breast tumor analysis.</p>
+        </div>
       </div>
-    </article>
 
-    <article class="project-card reveal">
-      <p class="icon">⚙️</p>
-      <h3>Databricks ETL Pipeline</h3>
-      <p>
-        Designed reusable PySpark ETL workflows on Databricks for ingestion,
-        transformation, validation, and analytics-ready data processing.
-      </p>
-      <div class="tags">
-        <span>Databricks</span><span>PySpark</span><span>ETL</span><span>Validation</span>
+      <div class="timeline-item">
+        <span>2026</span>
+        <div>
+          <h3>DART Poster Competition</h3>
+          <p>Presented tumor representation and reconstruction results in Little Rock, Arkansas.</p>
+        </div>
       </div>
-    </article>
-  </div>
-</section>
-
-<section id="publications" class="section soft">
-  <div class="section-kicker">Research & Publications</div>
-
-  <div class="split-heading">
-    <h2>Publications, presentations, and academic recognition.</h2>
-  </div>
-
-  <div class="card-grid">
-    <article class="publication-card reveal">
-      <p class="pub-label">Accepted Paper</p>
-      <h3>IntelliSys 2026</h3>
-      <p>
-        Accepted at the Intelligent Systems Conference 2026 in Amsterdam,
-        Netherlands, for research on deep generative modeling in breast
-        ultrasound representation learning.
-      </p>
-    </article>
-
-    <article class="publication-card reveal">
-      <p class="pub-label">Conference Presentation</p>
-      <h3>Arkansas Academy of Science 2026</h3>
-      <p>
-        Received 3rd Place for presenting research on Variational
-        Autoencoder-based breast tumor analysis.
-      </p>
-    </article>
-
-    <article class="publication-card reveal">
-      <p class="pub-label">Research Poster</p>
-      <h3>DART Poster Competition</h3>
-      <p>
-        Presented tumor representation and reconstruction results in
-        Little Rock, Arkansas.
-      </p>
-    </article>
-  </div>
-</section>
-
-<section id="skills" class="section">
-  <div class="section-kicker">Technical Expertise</div>
-
-  <div class="split-heading">
-    <h2>Tools and technologies used across AI research and engineering.</h2>
-  </div>
-
-  <div class="skills-panel reveal">
-    <div>
-      <h3>AI & ML</h3>
-      <p>Python • PyTorch • Scikit-learn • Transformers • Computer Vision • NLP • Model Evaluation</p>
     </div>
 
-    <div>
-      <h3>Generative AI</h3>
-      <p>LLMs • RAG • ChromaDB • Hugging Face • Prompt Engineering • LangGraph • Gemini API</p>
-    </div>
+    <a href="publications.html" class="arrow-link reveal">View publications →</a>
+  </section>
 
-    <div>
-      <h3>Data & Cloud</h3>
-      <p>SQL • PostgreSQL • PySpark • Databricks • AWS • GCP • ETL Pipelines</p>
-    </div>
+  <section id="contact" class="contact-section">
+    <p class="eyebrow reveal">Contact</p>
 
-    <div>
-      <h3>Analytics</h3>
-      <p>Power BI • Tableau • Excel • EDA • Matplotlib • Seaborn • Statistical Analysis</p>
-    </div>
-  </div>
-</section>
+    <h2 class="reveal">Let’s build trustworthy AI systems.</h2>
 
-<section id="contact" class="section contact">
-  <div class="contact-box reveal">
-    <p class="section-kicker">Contact</p>
-    <h2>Let’s build trustworthy AI systems.</h2>
-    <p>
+    <p class="reveal">
       Open to AI Engineer, Machine Learning Engineer, Generative AI Engineer,
       Data Scientist, and Healthcare AI roles.
     </p>
 
-    <div class="contact-links">
+    <div class="contact-links reveal">
       <a href="mailto:athawale.pooja2015@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/pooja-athawale-2a9a47231/" target="_blank">LinkedIn</a>
       <a href="https://github.com/athawalepy2015" target="_blank">GitHub</a>
       <a href="assets/PoojaResume2026.pdf" target="_blank">Resume</a>
     </div>
-  </div>
-</section>
+  </section>
 
 </main>
 
