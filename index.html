@@ -15,50 +15,48 @@
 
 <body>
   <header>
-  <nav class="navbar">
-    <a href="#home" class="logo">Pooja<span>AI</span></a>
+    <nav class="navbar">
+      <a href="#about" class="logo">Pooja<span>AI</span></a>
 
-    <button class="theme-toggle" id="themeToggle">🌙</button>
-    <button class="menu-btn" id="menuBtn">☰</button>
+      <button class="theme-toggle" id="themeToggle">🌙</button>
+      <button class="menu-btn" id="menuBtn">☰</button>
 
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#skills">Skills</a></li>
-      
-      <li><a href="#contact" class="nav-btn">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#awards">Research</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="nav-btn">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  
   <section id="about" class="section">
-  <p class="section-label">About</p>
-  <h2>Building Intelligent Systems for Real-World Impact</h2>
+    <p class="section-label">About</p>
+    <h2>Building Intelligent Systems for Real-World Impact</h2>
 
-  <div class="about-grid">
-    <div class="about-text reveal">
-      <p>
-        This portfolio brings together selected work in artificial intelligence,
-        machine learning, generative AI, healthcare AI, and data analytics.
-        Each project reflects a practical approach to solving complex problems
-        through research, experimentation, and engineering while emphasizing
-        reliability, scalability, and measurable impact.
-      </p>
-    </div>
+    <div class="about-grid">
+      <div class="about-text glass-card reveal">
+        <p>
+          This portfolio brings together selected work in artificial intelligence,
+          machine learning, generative AI, healthcare AI, and data analytics.
+          Each project reflects a practical approach to solving complex problems
+          through research, experimentation, and engineering while emphasizing
+          reliability, scalability, and measurable impact.
+        </p>
+      </div>
 
-    <div class="about-cards reveal">
-      <div>🤖 Artificial Intelligence</div>
-      <div>🧠 Machine Learning</div>
-      <div>🔬 Research & Innovation</div>
-      <div>📊 Data Analytics</div>
-      <div>☁️ Cloud Computing</div>
-      <div>⚡ Generative AI</div>
+      <div class="about-cards reveal">
+        <div>🤖 Artificial Intelligence</div>
+        <div>🧠 Machine Learning</div>
+        <div>🔬 Research & Innovation</div>
+        <div>📊 Data Analytics</div>
+        <div>☁️ Cloud Computing</div>
+        <div>⚡ Generative AI</div>
+      </div>
     </div>
-  </div>
-</section>
-  
+  </section>
+
   <section id="skills" class="section dark-section">
     <p class="section-label">Technical Skills</p>
     <h2>Modern AI, analytics, cloud, and data engineering stack.</h2>
@@ -117,23 +115,41 @@
     </div>
   </section>
 
-  
   <section id="projects" class="section dark-section">
     <p class="section-label">Projects</p>
     <h2>Selected AI, ML, and data engineering projects.</h2>
 
     <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-icon">🩺</div>
+        <h3>Clinical RAG Reliability Research</h3>
+        <p>
+          Built a clinical question-answering reliability pipeline to evaluate
+          generation-side confidence, calibration, evidence use, and failure patterns
+          across medical QA datasets.
+        </p>
+        <div class="project-metrics">
+          <span>13,872 QA Samples</span>
+          <span>RAG Reliability</span>
+          <span>LLM Evaluation</span>
+        </div>
+        <div class="tags">
+          <span>Python</span><span>RAG</span><span>LLMs</span><span>Healthcare AI</span>
+        </div>
+      </div>
+
       <div class="project-card reveal">
         <div class="project-icon">🧬</div>
         <h3>Breast Ultrasound VAE Research</h3>
         <p>
-          Built a Variational Autoencoder for Breast Ultrasound Image Analysis using
-          Unsupervised Representation Learning and Latent Space Evaluation.
+          Built a Variational Autoencoder for breast ultrasound image analysis using
+          unsupervised representation learning and latent space evaluation.
         </p>
         <div class="project-metrics">
           <span>780+ Images</span>
-          <span>22% Fidelity Gain</span>
-          <span>4× Compression</span>
+          <span>Latent Analysis</span>
+          <span>Medical Imaging</span>
         </div>
         <div class="tags">
           <span>PyTorch</span><span>VAE</span><span>Computer Vision</span><span>UMAP</span>
@@ -145,7 +161,7 @@
         <h3>BankAI Customer Decision Prediction</h3>
         <p>
           Evaluated Logistic Regression, SVM, Decision Trees, Random Forest,
-          ANN, and CNN using Accuracy, Precision, Recall, F1, and ROC-AUC.
+          ANN, and other ML models using Accuracy, Precision, Recall, F1, and ROC-AUC.
         </p>
         <div class="project-metrics">
           <span>6 Models</span>
@@ -161,8 +177,8 @@
         <div class="project-icon">🌌</div>
         <h3>AuroraPredict AI</h3>
         <p>
-          Built a Predictive Modeling Pipeline using 10+ years of Light-Pollution
-          and Solar Activity data from 2014–2024.
+          Built a predictive modeling pipeline using 10+ years of light-pollution
+          and solar activity data from 2014–2024.
         </p>
         <div class="project-metrics">
           <span>10+ Years Data</span>
@@ -178,8 +194,8 @@
         <div class="project-icon">⚙️</div>
         <h3>Databricks ETL Pipeline</h3>
         <p>
-          Designed Reusable ETL pipelines in PySpark on Databricks for Ingestion,
-          Transformation, Validation, and Analytics Workflows.
+          Designed reusable ETL pipelines in PySpark on Databricks for ingestion,
+          transformation, validation, and analytics workflows.
         </p>
         <div class="project-metrics">
           <span>PySpark</span>
@@ -190,6 +206,7 @@
           <span>Databricks</span><span>PySpark</span><span>ETL</span><span>Validation</span>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -201,30 +218,28 @@
       <div class="research-card reveal">
         <h3>Arkansas Academy of Science 2026</h3>
         <p>
-          Received 3rd Place at the AAS Conference Presentation for Research on
-          Variational Autoencoder-based Breast Tumor Analysis.
+          Received 3rd Place at the AAS Conference Presentation for research on
+          Variational Autoencoder-based breast tumor analysis.
         </p>
       </div>
 
       <div class="research-card reveal">
         <h3>IntelliSys 2026</h3>
         <p>
-          Research Paper accepted at the Intelligent Systems Conference 2026,
-          Amsterdam, Netherlands, on Deep Generative Modeling for Medical Image Analysis.
+          Research paper accepted at the Intelligent Systems Conference 2026,
+          Amsterdam, Netherlands, on deep generative modeling for medical image analysis.
         </p>
       </div>
 
       <div class="research-card reveal">
         <h3>DART Poster Competition</h3>
         <p>
-          Presented Research Poster in Little Rock, Arkansas, demonstrating Tumor
-          Representation and Reconstruction Results.
+          Presented a research poster in Little Rock, Arkansas, demonstrating tumor
+          representation and reconstruction results.
         </p>
       </div>
     </div>
   </section>
-
-  
 
   <section class="section recruiter-section">
     <p class="section-label">Core Expertise</p>
@@ -251,8 +266,8 @@
       <p class="section-label">Contact</p>
       <h2>Let’s build something impactful.</h2>
       <p>
-        Open to AI/ML Engineer, Data Scientist, Data Analyst, Cloud/Data Engineer,
-        and Generative AI roles.
+        Open to AI/ML Engineer, Data Scientist, Generative AI Engineer,
+        and Data Analyst roles.
       </p>
 
       <div class="contact-links">
@@ -265,9 +280,8 @@
   </section>
 
   <footer>
-  <p>© <span id="year"></span> Pooja Yogesh Athawale</p>
-  <p class="visitor-counter">👁 Visitors: <span id="visitorCount">Loading...</span></p>
-</footer>
+    <p>© <span id="year"></span> Pooja Yogesh Athawale</p>
+  </footer>
 
   <button id="topBtn" class="top-btn">↑</button>
 
